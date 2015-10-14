@@ -1,0 +1,48 @@
+.layer {
+    display: inline-block;
+    border: 1px solid #cccccc;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 6px;
+}
+
+.single-frame {
+    display: inline-block;
+    width: 140px;
+    height: 110px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    white-space: normal;
+    padding: 5px;
+    margin: 8px;
+    background: white;
+}
+
+.single-frame:hover {
+    border-color: red;
+}
+
+.single-frame-active {
+    border: 2px solid black;
+}
+
+#frames {
+    /*width:600px;*/
+    min-height: 140px;
+    margin: 100px auto 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    overflow: auto;
+    white-space: nowrap;
+    box-shadow: 0 0 10px #000;
+}
+
+#simulator {
+    border: #cccccc 1px solid;
+}
+
+#model {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

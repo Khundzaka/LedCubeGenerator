@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>კუბის გენერატორი</title>
+    <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+<div class="layer">
+    <input type="checkbox" id="check1"/>
+    <input type="checkbox" id="check2"/>
+    <input type="checkbox" id="check3"/><br/>
+    <input type="checkbox" id="check4"/>
+    <input type="checkbox" id="check5"/>
+    <input type="checkbox" id="check6"/><br/>
+    <input type="checkbox" id="check7"/>
+    <input type="checkbox" id="check8"/>
+    <input type="checkbox" id="check9"/>
+</div>
+<div class="layer">
+    <input type="checkbox" id="check10"/>
+    <input type="checkbox" id="check11"/>
+    <input type="checkbox" id="check12"/><br/>
+    <input type="checkbox" id="check13"/>
+    <input type="checkbox" id="check14"/>
+    <input type="checkbox" id="check15"/><br/>
+    <input type="checkbox" id="check16"/>
+    <input type="checkbox" id="check17"/>
+    <input type="checkbox" id="check18"/>
+</div>
+<div class="layer">
+    <input type="checkbox" id="check19"/>
+    <input type="checkbox" id="check20"/>
+    <input type="checkbox" id="check21"/><br/>
+    <input type="checkbox" id="check22"/>
+    <input type="checkbox" id="check23"/>
+    <input type="checkbox" id="check24"/><br/>
+    <input type="checkbox" id="check25"/>
+    <input type="checkbox" id="check26"/>
+    <input type="checkbox" id="check27"/>
+</div>
+<label for="durationInput">ხანგრძლივობა:</label> <input type="number" id="durationInput" value="1" style="max-width: 40px;"/>
+<br/>
+<canvas id="simulator" width="100" height="100"></canvas>
+<br/>
+<br/>
+<button onclick="addFrame()">დამატება</button>
+<div id="frames"></div>
+<div class="controls">
+    <button onclick="removeActiveFrame()">წაშლა</button>
+    <button onclick="moveLeft()">&lt;&lt;&lt;</button>
+    <button onclick="moveRight()">&gt;&gt;&gt;</button>
+    <button onclick="cloneFrame()">კლონირება</button>
+    <b>::</b>
+    <button onclick="playSimulation()">Play</button>
+    <button onclick="pauseSimulation()">Pause</button>
+    <button onclick="stopSimulation()">Stop</button>
+    <b>::</b>
+    <button onclick="generateArduinoCode()">გენერირება</button>
+
+</div>
+<div id="model"></div>
+<script src="js/RequestAnimationFrame.js" type="application/javascript"></script>
+<script src="js/Three.js" type="application/javascript"></script>
+<script src="js/OrbitControls.js" type="application/javascript"></script>
+<script src="js/cubeLogic.js" type="application/javascript"></script>
+<script src="js/app.js" type="application/javascript"></script>
+</body>
+</html>
